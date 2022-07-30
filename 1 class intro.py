@@ -1,0 +1,15 @@
+# CLASS
+class Employee:
+    def __init__(self,eid,ename,eaddress):      # constructor method
+        self.id=eid
+        self.name=ename
+        self.add=eaddress
+    def show(self):                             # display method
+        print(self.name)
+        print(self.id)
+        print(self.add)
+        print(id(self))
+# OBJECT
+e1=Employee(101,'Arun','Pune')
+print(id(e1))
+e1.show()
